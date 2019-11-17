@@ -1,0 +1,222 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+/* HEADER */
+.headerrow a {
+    text-decoration: none;
+    color: white
+  }
+
+.fa-bars:before {content:"\f0c9"}
+
+@media only screen and (min-width: 768px) {
+.icon {
+    display: none;
+}
+
+nav {
+    background-color: #3E3651;
+    color: white;
+    padding: 1.25em;
+    display: flex;
+    flex-direction: column;
+}
+
+.headerrow {
+    display: flex;
+    align-items: center;
+  }
+  
+.headercolumn {
+    flex: 50%;
+  }
+
+.headermenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0px;
+}
+
+.headermenu ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: -1px;
+    padding-inline-start: 0px;
+    margin: 0px;
+}
+.headermenu li {
+    list-style: none;
+    flex-grow: 1;
+    flex-basis: auto;
+    margin: .25em 0;
+    padding: 0 1em;
+    text-align: center;
+    border-left: 1px solid #ccc;
+}
+
+.headermenu li:first-child{
+    border-left: none;
+    padding-left: 0em;
+}
+
+.headermenu li:last-child{
+    padding-right: 0em;
+}
+
+.headermenu a {
+    text-decoration: none;
+    color: white;
+}
+
+.headermenu a:hover{
+    text-decoration: underline;
+}
+}
+
+@media only screen and (max-width: 767px) {
+    /* Style the navigation menu */
+    .headerrow {
+        overflow: hidden;
+        background-color: #333;
+        position: relative;
+      }
+    
+    .headerrow li {
+        list-style: none;
+    }
+
+    .headerrow form {
+        padding: 14px 16px;
+    }
+    
+    .headerrow ul {
+        padding: 0px;
+        margin: 0px;
+    }
+      
+      /* Hide the links inside the navigation menu (except for logo/home) */
+      .headerrow #myLinks {
+        display: none;
+      }
+      
+      /* Style navigation menu links */
+      .headerrow a {
+        font-size: 1em;
+        display: block;
+        padding: 14px 16px;
+      }
+      
+      /* Style the hamburger menu */
+      .headerrow a.icon {
+        background: #333;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      
+      /* Add a grey background color on mouse-over */
+      .headerrow a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      
+      /* Style the active link (or home/logo) */
+      .active {
+        background-color: #3E3651;
+        color: white;
+      }
+    } 
+
+/* HEADER END */
+
+h1 {
+    margin: 0px;
+}
+
+@media only screen and (max-width: 767px) {
+    h1 {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+h1 {
+    font-size: 2em;
+}
+}
+
+p {
+    margin: 0px;
+}
+
+.map {
+        width: 96%;
+        margin: 2%;
+}
+
+/* FOOTER */
+footer {
+    background-color: #3E3651;
+    color: white;
+    padding: 1.25em;
+    text-align: center;
+}
+
+.footerlinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0px;
+}
+
+.footerlinks ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: -1px;
+    padding-inline-start: 0px;
+    margin: 0em 0em 1em 0em;
+}
+.footerlinks li {
+    list-style: none;
+    flex-grow: 1;
+    flex-basis: auto;
+    margin: .25em 0;
+    padding: 0 1em;
+    text-align: center;
+}
+
+@media only screen and (min-width: 450px) {
+.footerlinks li {
+    border-left: 1px solid #ccc;
+}
+}
+
+@media only screen and (max-width: 449px) {
+    .footerlinks li {
+        width: 100%;
+    }
+}
+
+.footerlinks li:first-child{
+    border-left: none;
+}
+
+.footerlinks a {
+    text-decoration: none;
+    color: white;
+}
+
+.footerlinks a:hover{
+    text-decoration: underline;
+}
+
+/* FOOTER END */
+
