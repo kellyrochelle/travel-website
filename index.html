@@ -5,12 +5,14 @@
         <link rel="stylesheet" type="text/css" href=".\css\main.css">
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src=".\js\app.js"></script>
+        <style>
+        </style>
     </head>
     <body>
         <nav>
             <div class="headerrow">
                     <div class="headercolumn">
-                        <a href="..\index.html" class="active"><h1>World Travel</h1></a>
+                        <a href="..\index.html" class="activemenu"><h1>World Travel</h1></a>
                     </div>
                     <div class="headercolumn">
                         <div class="headermenu" id="myLinks">
@@ -29,6 +31,54 @@
         </nav>
         <main>
             <img src=".\img\world_map_PNG3.png" class="map" alt="World Map">
+            <div class="accordionmenu">
+                <button class="accordion">Europe</button>
+                <div class="panel">
+                <p>Iceland</p>
+                </div>
+
+                <button class="accordion">Asia</button>
+                <div class="panel">
+                <p>Japan</p>
+                </div>
+
+                <button class="accordion">North America</button>
+                <div class="panel">
+                <p>Canada</p>
+                </div> 
+
+                <button class="accordion">South America</button>
+                <div class="panel">
+                <p>Argentina</p>
+                </div>  
+
+                <button class="accordion">Oceania</button>
+                <div class="panel">
+                <p>Australia ></p>
+                <p>New Zealand ></p>
+                </div>
+
+                <button class="accordion">Africa</button>
+                <div class="panel">
+                <p>South Africa</p>
+                </div>
+            </div>
+                <script>
+                        var acc = document.getElementsByClassName("accordion");
+                        var i;
+                        
+                        for (i = 0; i < acc.length; i++) {
+                          acc[i].addEventListener("click", function() {
+                            this.classList.toggle("activeacc");
+                            var panel = this.nextElementSibling;
+                            if (panel.style.display === "block") {
+                              panel.style.display = "none";
+                            } else {
+                              panel.style.display = "block";
+                            }
+                          });
+                        }
+                </script>
         </main>
         <footer>
             <div class="footerlinks">
