@@ -268,3 +268,8 @@ footer {
   .activeacc:after {
     content: "<"; /* Unicode character for "minus" sign (-) */
   }
+
+  /* Flexbox Grid */
+  .box {
+      background: purple;
+  }
