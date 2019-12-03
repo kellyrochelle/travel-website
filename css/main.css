@@ -139,15 +139,38 @@ h1 {
     margin: 0px;
 }
 
+h2 {
+    text-align: center;
+    font-weight: normal;
+}
+
+.details {
+    margin: 20px;
+}
+
 @media only screen and (max-width: 767px) {
     h1 {
         font-size: 1em;
+    }
+    h2 {
+        font-size: 1.5em;
+        margin: 20px;
+    }
+    .map {
+        display: none;
     }
 }
 
 @media only screen and (min-width: 768px) {
 h1 {
     font-size: 2em;
+}
+h2 {
+    font-size: 2em;
+    margin: 40px;
+}
+.mobilemap {
+    display: none;
 }
 }
 
@@ -158,6 +181,23 @@ p {
 .map {
         width: 96%;
         margin: 2%;
+}
+
+.mobilemap {
+    width: 96%;
+    margin: 2%;
+}
+
+path:hover {
+    fill: #3E3651;
+}
+
+.map a {
+    fill: #00FF00;
+}
+
+.banner {
+    width: 100%;
 }
 
 /* FOOTER */
@@ -253,8 +293,20 @@ footer {
     border-top: 1px solid #ccc;
 }
 
-.panel p:hover {
-    background: #eee;
+.panel a:link {
+    color: black;
+}
+
+.panel a:hover {
+    color: #0081cd;
+}
+
+.panel a {
+    text-decoration: none;
+}
+
+.panel a:hover {
+    text-decoration: underline;
 }
 
   .accordion:after {
